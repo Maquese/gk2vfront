@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenney\\Documents\\Projetos\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "projectUniqueName": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
       "projectName": "gk2vFront",
-      "projectPath": "C:\\Users\\kenney\\Documents\\Projetos\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "projectPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
       "packagesPath": "C:\\Users\\kenney\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenney\\Documents\\Projetos\\gk2vfront\\gk2vFront\\obj\\",
+      "outputPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

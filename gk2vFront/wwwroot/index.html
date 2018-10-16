@@ -1,11 +1,13 @@
 <html ng-app="app">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="js/angular.min.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/appGet.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <script src="js/viewTeste.js" type="text/javascript"></script> <!--colocar os scripts-->
+
     </head>
-<body ng-controller="appControllerGet">
+<body ng-controller="appController">
     <input ng-model="test" type="text" />
-    {{test}}
+    <view-teste></view-teste><!--colocar as diretivas/tags-->
 </body>
 </html>
