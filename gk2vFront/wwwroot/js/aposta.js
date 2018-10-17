@@ -1,4 +1,26 @@
-var app = angular.module("app", []);
+angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir sempre o modulo de app fodasse a performance :)
+  .component("apostaPartida",{ //// nomo do componente no html trasformar as maiusculas em traço mais a letra maiscula em minuscula exemplo view-teste
+      templateUrl: '../html/apostaPartida.html', ///caminho do seu html brown
+      bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
+      controller: function(){ /// chamada ao iniciar seu componente
+        var $ctrl = this;
+        $ctrl.chamaPrimo = chamaPrimo;
+
+        function chamaPrimo(){
+            console.log("chamou o primo no log");
+        };
+        
+        $ctrl.nome = "cu";
+
+
+        //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
+      }
+  });
+
+
+
+
+/*var app = angular.module("app", []);
 
 app.controller("apostaController", function ($scope, $http) {
 
@@ -29,7 +51,7 @@ app.controller("apostaController", function ($scope, $http) {
             $scope.partidas = response.data
         }).error(function (error) {
             alert("Falha ao listar partidas");
-        })*/
+        })
 
     }
 
@@ -50,35 +72,7 @@ app.controller("apostaController", function ($scope, $http) {
              }).error(function (error) {
                  alert("Falha ao realizar aposta.");
              })
-        */
+        
     };
 });
-
-/*(function (angular) {
-    "use strict";
-
-    angular.module("app").component("apostaComp", {
-        //templateUrl: '../../gk2v-Front/html/aposta.html',
-        //templateUrl: '../html/aposta.html',
-        controller: controller,
-        bindings: {
-
-        }
-    });
-
-    controller.$inject = ["$rootScope", "$http", "$scope", "$timeout", "$q"];
-
-    function controller($rootScope, $http, $scope, $timeout, $q) {
-        var $ctrl = this;
-
-      
-        $ctrl.init = init;
-        $ctrl.init();
-
-      function init() {
-          alert("componente");
-       };
-
-    }
-})(window.angular);
 */
