@@ -26,3 +26,17 @@ C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\n
 C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
 C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
 C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
+C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb

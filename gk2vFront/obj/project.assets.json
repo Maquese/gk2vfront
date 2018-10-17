@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kenney\\.nuget\\packages\\": {},
+    "C:\\Users\\clastech\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
+      "projectUniqueName": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
       "projectName": "gk2vFront",
-      "projectPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
-      "packagesPath": "C:\\Users\\kenney\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\obj\\",
+      "projectPath": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
+      "packagesPath": "C:\\Users\\clastech\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vfront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kenney\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\clastech\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
