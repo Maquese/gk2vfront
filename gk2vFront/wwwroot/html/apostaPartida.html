@@ -7,30 +7,30 @@
   <div class="9u skel-cell-important">
     <section>
       <header>
-        <h2>{{temporada}} - {{fase}}</h2>
+        <h2>{{$ctrl.temporada}} - {{$ctrl.fase}}</h2>
         <span class="byline">Escolha os resultados baseados em seus conhecimentos no futebol. Boa Sorte !!</span>
       </header>
       <p>
       <br>
 
       <div style="font-size:24px">
-        <form ng-repeat="partida in partidas track by $index" style="border:1px solid">
+        <form ng-repeat="partida in $ctrl.partidas track by $index" style="border:1px solid">
           <div>
             <p>{{partida.mandante}}</p>
-             <INPUT ng-model="partida.resultado" ng-change="apostaTime(partida.resultado, $index)"  TYPE="RADIO" ng-value="partida.mandante"> Vence time A
+             <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, $index)"  TYPE="RADIO" ng-value="partida.mandante"> Vence time A
             </div>
           <div>
-            <p>X</p><INPUT ng-model="partida.resultado" ng-change="apostaTime(partida.resultado , $index)" TYPE="RADIO" ng-value="null"> Empate
+            <p>X</p><INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado , $index)" TYPE="RADIO" ng-value="null"> Empate
           </div>
           <div>
             <p>{{partida.visitante}}</p>
-            <INPUT ng-model="partida.resultado" ng-change="apostaTime(partida.resultado, $index)" TYPE="RADIO" ng-value="partida.visitante"> Vence time B
+            <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, $index)" TYPE="RADIO" ng-value="partida.visitante"> Vence time B
             </div>
         </form> 
       </div>
       <br>
       </p>
-      <button style="font-size:24px" type="button" ng-click="efetuarAposta()" >Submit</button>
+      <button style="font-size:24px" type="button" ng-click="$ctrl.efetuarAposta()" >Submit</button>
     </section>
   </div>
 

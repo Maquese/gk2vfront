@@ -1,0 +1,29 @@
+<div id="welcome">
+
+	<div class="title">
+		<h2>GK2V Bet</h2>
+		<span class="byline">Aposte em seus conhecimentos sobre Copa do Mundo! Boa sorte!!</span>
+	</div>
+	<p>Este site foi desenvolvido exclusivamente para a disciplina de Projeto Integrado F da PUC-Campinas, SP.</p>
+
+
+	<div id="featured">
+		<div class="title">
+			<h2>Calendário Temporadas</h2>
+			<span class="byline">Não perca o tempo de aposta!</span>
+		</div>
+		<ul class="style1">
+			<li class="first" ng-repeat="temporada in $ctrl.temporadas">
+				<p class="date"><a href="#">{{temporada.mes}}<b>{{temporada.dia}}</b></a></p>
+				<h3>{{temporada.nome}}</h3>
+				<p><a href="#">{{temporada.descricao}}</a></p>
+				<button ng-click="$ctrl.escolherTemporada(temporada)">Participar</button>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<div id="copyright">
+	<span>&copy; GK2V. All rights reserved. | PUC-Campinas, SP</span>
+</div>

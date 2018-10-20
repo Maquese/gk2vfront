@@ -1,52 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-Design by TEMPLATED
-http://templated.co
-Released for free under the Creative Commons Attribution License
-
-Name       : Skeleton 
-Description: A two-column, fixed-width design with dark color scheme.
-Version    : 1.0
-Released   : 20130902
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>GK2V Bet</title>
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-  <link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
-  <link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
-
-
-  <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
-
-<body ng-controller="appController">
-  <div id="page" class="container">
-    <div id="header">
-      <div id="logo">
-        <span>Design by GK2V Team</span>
-      </div>
-      <div id="menu">
-        <ul>
-          <li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-          <li><a href="#" accesskey="2" title="">Temporadas</a></li>
-          <li><a href="#" accesskey="3" title="">Minhas apostas</a></li>
-          <li><a href="#" accesskey="4" title="">Meu perfil</a></li>
-          <li><a href="#" accesskey="5" title="">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="main">
-      <div id="banner">
-        <img src="../images/pic01.jpg" alt="" class="image-full" />
-      </div>
-      <!-- <aposta-comp></aposta-comp> -->
-      <!-- <cup-simulator></cup-simulator> -->
-      <!-- <user></user> -->
       <div id="welcome">
         <div class="title">
           <h2>GK2V Bet</h2>
@@ -65,43 +16,43 @@ Released   : 20130902
                     <div class="form-group ">
                       <label for="fullname" class="control-label col-lg-2">Full name <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class=" form-control" id="fullname" name="fullname" type="text" ng-model="user.nome" />
+                        <input class=" form-control" id="fullname" name="fullname" type="text" ng-model="$ctrl.user.nome" />
                       </div>
                     </div>
                     <div class="form-group ">
                       <label for="username" class="control-label col-lg-2">Username <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="username" name="username" type="text" ng-model="user.nomeSistema" />
+                        <input class="form-control " id="username" name="username" type="text" ng-model="$ctrl.user.nomeSistema" />
                       </div>
                     </div>
                     <div class="form-group ">
                       <label for="password" class="control-label col-lg-2">Password <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="password" name="password" type="password" ng-model="user.senha" />
+                        <input class="form-control " id="password" name="password" type="password" ng-model="$ctrl.user.senha" />
                       </div>
                     </div>
                     <div class="form-group ">
                       <label for="confirm_password" class="control-label col-lg-2">Confirm Password <span class="required">*</span></label>
                       <div class="col-lg-10">
                         <input class="form-control " id="confirm_password" name="confirm_password" type="password"
-                          ng-model="user.senhaConfirma" />
+                          ng-model="$ctrl.user.senhaConfirma" />
                       </div>
                     </div>
                     <div class="form-group ">
                       <label for="email" class="control-label col-lg-2">Email <span class="required">*</span></label>
                       <div class="col-lg-10">
-                        <input class="form-control " id="email" name="email" type="email" ng-model="user.mail" />
+                        <input class="form-control " id="email" name="email" type="email" ng-model="$ctrl.user.mail" />
                       </div>
                     </div>
                     <div class="form-group ">
                       <label for="agree" class="control-label col-lg-2 col-sm-3">Agree to Our Policy <span class="required">*</span></label><input
-                        type="checkbox" ng-model="user.policy" style="width: 20px" class="checkbox form-control" id="agree"
+                        type="checkbox" ng-model="$ctrl.user.policy" style="width: 20px" class="checkbox form-control" id="agree"
                         name="agree" />
                     </div>
                     <div class="form-group">
                       <div class="col-lg-offset-2 col-lg-10">
-                        <button class="btn btn-primary" type="button" ng-click="salvarUsuario(user)">Save</button>
-                        <button class="btn btn-default" type="button" ng-click="cancelarUsuario()">Cancel</button>
+                        <button class="btn btn-primary" type="button" ng-click="$ctrl.salvarUsuario($ctrl.user)">Save</button>
+                        <button class="btn btn-default" type="button" ng-click="$ctrl.cancelarUsuario()">Cancel</button>
                       </div>
                     </div>
                   </form>
@@ -114,19 +65,3 @@ Released   : 20130902
       <!-- fim componente -->
     </div>
   </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-    <script src="../js/angular.min.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../js/aposta.js"></script>
-
-</body>
-
-</html>
