@@ -11,11 +11,11 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             var api = 'http://localhost:7000/api/Usuario/Cadastrar';
             $ctrl.salvarUsuario = function (user) {
-                if (user.nome == '' || user.nomeSistema == '' || user.senha == '' || user.senhaConfirma == '' || user.mail == '')
+                if (user.nome == '' || user.nomeSistema == '' || user.senha == '' || user.senhaConfirma == '' || user.email == '')
                     alert("Preencha os campos obrigatorios");
                 else
                     if (user.senha == user.senhaConfirma && user.policy)
-                        $http.post(api, $ctrl.user)
+                        $http.post(api, user)
                             .success(function (response) {
                                 alert("Usuario salvo com sucesso!");
                             }).error(function (error) {
@@ -26,17 +26,17 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             };
 
             function preencherUser() {
-                var api = 'http://localhost:7000/api/Usuario/Login';
-                $ctrl.user.mail = "g@gk2v.com";
-                $ctrl.user.senha = "g";
+                var api = 'http://127.0.0.1:7000/api/Usuario/Login';
+                $ctrl.user.email = "admin@admin.com";
+                $ctrl.user.senha = "admin";
                 var params = { 
-                    email: $ctrl.user.mail,
+                    email: $ctrl.user.email,
                     senha: $ctrl.user.senha
                  }
-
-                $http.post(api, params)
+                console.log(params);
+                $http.post(api,  params)
                     .success(function (response) {
-                        $ctrl.user = response.data;
+                        $ctrl.user = response;
                     }).error(function (error) {
                         alert("Falha ao buscar o usuário");
                     })
