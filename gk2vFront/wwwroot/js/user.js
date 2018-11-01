@@ -7,8 +7,6 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             $ctrl.user = {};
 
-            //var api = 'api/Usuario/Cadastrar';
-
             var api = 'http://localhost:7000/api/Usuario/Cadastrar';
             $ctrl.salvarUsuario = function (user) {
                 if (user.nome == '' || user.nomeSistema == '' || user.senha == '' || user.senhaConfirma == '' || user.email == '')

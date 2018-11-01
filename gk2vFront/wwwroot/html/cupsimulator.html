@@ -17,9 +17,12 @@
 		<div id="menu">
 			<ul>
 				<li ng-click="$ctrl.irPara('home')"><a accesskey="1" title="">Homepage</a></li>
+				<li ng-click="$ctrl.irPara('quiz')"><a href="#" accesskey="2" title="">Quiz</a></li>
+				<li ng-click="$ctrl.irPara('times')"><a href="#" accesskey="1" title="">Times (Análise)</a></li>
 				<li ng-click="$ctrl.irPara('temporadas')" class="current_page_item"><a accesskey="2" title="">Temporadas</a></li>
 				<li ng-click="$ctrl.irPara('apostas')" ><a  accesskey="3" title="" >Minhas apostas</a></li>
 				<li ng-click="$ctrl.irPara('perfil')" ><a  accesskey="4" title="" >Meu perfil</a></li>
+				<li ng-click="$ctrl.irPara('novaTemporada')"><a href="#" accesskey="2" title="">Gerar Temporada (admin only)</a></li>
 				<li ng-click="$ctrl.irPara('contato')" ><a  accesskey="5" title="" >Contact Us</a></li>
 			</ul>
 		</div>
@@ -31,6 +34,10 @@
 		<aposta-partida ng-if="$ctrl.apostas"></aposta-partida>
 		<home-app ng-if="$ctrl.home"></home-app>
 		<user-app ng-if="$ctrl.perfil"></user-app>
+		<quiz-app ng-if="$ctrl.quiz"></quiz-app>
+		<times-app ng-if="$ctrl.times"></times-app>
+		<ranking-app ng-if="$ctrl.ranking"></ranking-app>
+		<nova-temporada ng-if="$ctrl.novaTemporada"></nova-temporada>
 	</div>
 </div>
 
@@ -42,3 +49,4 @@ crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 crossorigin="anonymous"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+
