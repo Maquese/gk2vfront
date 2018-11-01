@@ -6,7 +6,7 @@
     <div class="9u skel-cell-important">
         <section>
             <header>
-                <h2>Quantos gols o Pelé marcou em toda a Copa do Mundo?</h2>
+                <h2>{{$ctrl.pergunta.enunciado}}</h2>
                 <span class="byline">Escolha uma opção:</span>
             </header>
             <p>
@@ -15,29 +15,33 @@
                     <form>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1_timeA">1- </th>
-                            <th> 53 Gols</th>
+                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp1" ng-model="$ctrl.pergunta.resp1" 
+                                ng-change="$ctrl.escolherResposta($ctrl.resp1)"></th>
+                            <th>{{$ctrl.pergunta.resp1}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1_timeA">2- </th>
-                            <th> 75 Gols</th>
+                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp2" ng-model="$ctrl.pergunta.resp2" 
+                                ng-change="$ctrl.escolherResposta($ctrl.resp2)"></th>
+                            <th>{{$ctrl.pergunta.resp2}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1_timeA">3- </th>
-                            <th> 35 Gols</th>
+                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp3" ng-model="$ctrl.pergunta.resp3" 
+                                ng-change="$ctrl.escolherResposta($ctrl.resp3)"></th>
+                            <th>{{$ctrl.pergunta.resp3}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1_timeA">4- </th>
-                            <th> 82 Gols</th>
+                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp4"ng-model="$ctrl.pergunta.resp4" 
+                                ng-change="$ctrl.escolherResposta($ctrl.resp4)"></th>
+                            <th>{{$ctrl.pergunta.resp4}}</th>
                         </tr>
                     </form>
                 </table>
                 <br>
             </p>
-            <button style="font-size:24px">Submit</button>
+            <button style="font-size:24px" ng-click="$ctrl.responder()">Submit</button>
         </section>
     </div>
     <p><br><br>Este site foi desenvolvido exclusivamente para a disciplina de Projeto Integrado F da PUC-Campinas, SP.</p>
