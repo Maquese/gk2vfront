@@ -15,26 +15,30 @@
                     <form>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp1" ng-model="$ctrl.pergunta.resp1" 
-                                ng-change="$ctrl.escolherResposta($ctrl.resp1)"></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.resp1)" TYPE="RADIO" ng-value="$ctrl.pergunta.resp1">
+                            </th>
                             <th>{{$ctrl.pergunta.resp1}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp2" ng-model="$ctrl.pergunta.resp2" 
-                                ng-change="$ctrl.escolherResposta($ctrl.resp2)"></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.resp2)" TYPE="RADIO" ng-value="$ctrl.pergunta.resp2">
+                            </th>
                             <th>{{$ctrl.pergunta.resp2}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp3" ng-model="$ctrl.pergunta.resp3" 
-                                ng-change="$ctrl.escolherResposta($ctrl.resp3)"></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.resp3)" TYPE="RADIO" ng-value="$ctrl.pergunta.resp3">
+                            </th>
                             <th>{{$ctrl.pergunta.resp3}}</th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th><INPUT TYPE="RADIO" NAME="OPCAO1" ng-value="$ctrl.pergunta.resp4"ng-model="$ctrl.pergunta.resp4" 
-                                ng-change="$ctrl.escolherResposta($ctrl.resp4)"></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.resp4)" TYPE="RADIO" ng-value="$ctrl.pergunta.resp4">
+                            </th>
                             <th>{{$ctrl.pergunta.resp4}}</th>
                         </tr>
                     </form>

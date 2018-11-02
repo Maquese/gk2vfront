@@ -22,7 +22,7 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
         $ctrl.respostaUser = "";
 
         function escolherResposta(value) {
-            $ctrl.resposta = value;
+            $ctrl.respostaUser = value;
         }
 
         function responder() {
@@ -36,7 +36,7 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
 
         function getQuiz() {
             var api = "ResponderQuiz"
-            $http.post(api, { resposta: $ctrl.resposta })
+            $http.post(api)
                 .success(function (response) {
                     $ctrl.pergunta = response;
                 }).error(function (error) {
