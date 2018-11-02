@@ -2,7 +2,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
     .component("userApp", { //// nomo do componente no html trasformar as maiusculas em traço mais a letra maiscula em minuscula exemplo view-teste
         templateUrl: '../html/user.html', ///caminho do seu html brown
         bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
-        controller: function ($http) { /// chamada ao iniciar seu componente
+        controller: function ($http, gk2vService) { /// chamada ao iniciar seu componente
             var $ctrl = this;
 
             $ctrl.user = {};
@@ -24,7 +24,8 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             };
 
             function preencherUser() {
-                var api = 'http://127.0.0.1:7000/api/Usuario/Login';
+                $ctrl.user = gk2vService.getUser();
+               /* var api = 'http://127.0.0.1:7000/api/Usuario/Login';
                 $ctrl.user.email = "admin@admin.com";
                 $ctrl.user.senha = "admin";
                 var params = { 
@@ -37,7 +38,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                         $ctrl.user = response;
                     }).error(function (error) {
                         alert("Falha ao buscar o usuário");
-                    })
+                    })*/
             }
 
             preencherUser();
