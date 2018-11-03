@@ -2,10 +2,11 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
     .component("cupSimulator", { //// nomo do componente no html trasformar as maiusculas em traço mais a letra maiscula em minuscula exemplo view-teste
         templateUrl: '../html/cupsimulator.html', ///caminho do seu html brown
         bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
-        controller: function () { /// chamada ao iniciar seu componente
+        controller: function (gk2vService) { /// chamada ao iniciar seu componente
             var $ctrl = this;
             $ctrl.irPara = irPara;
             $("body").css("background", "");
+
 
             function irPara(pagina) {
                 if (pagina == 'apostas') {
@@ -105,8 +106,22 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }
             }
 
-            irPara('home');
+            if (!nullOrUndef(gk2vService.getPagina())){
+                irPara(gk2vService.getPagina());
+            }
+            else{
+                irPara('home');
+            }
 
+            gk2vService.setMudaPagina(irPara);
+
+            function nullOrUndef(obj) {
+                return obj === undefined || obj == null;
+            }
+
+            function nullOrUndefOrEmpty(obj) {
+                return obj === undefined || obj == null || obj === "";
+            }
             //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
         }
     });

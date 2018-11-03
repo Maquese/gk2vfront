@@ -5,8 +5,15 @@ angular.module('app')
         return {
             setUser: setUser,
             getUser: getUser,
+            setPagina: setPagina,
+            getPagina: getPagina,
+            nullOrUndef: nullOrUndef,
+            setTemporada: setTemporada,
+            getTemporada: getTemporada,
+            setMudaPagina:setMudaPagina,
+            mudaPagina:mudaPagina
         };
-///construtor
+        ///construtor
         function setUser(value) {
             service.usuarioLogado = value;
         }
@@ -14,7 +21,6 @@ angular.module('app')
         function getUser() {
             return service.usuarioLogado;
         }
-
 
         ///getters e setters
         function setUserId(value) {
@@ -56,5 +62,40 @@ angular.module('app')
 
         function getUserTipoUsuario() {
             return service.usuarioLogado.tipoUsuario;
+        }
+
+        //pagina
+        function setPagina(value) {
+            service.pagina = value;
+        }
+
+        function getPagina() {
+            return service.pagina;
+        }
+
+        function setMudaPagina(func) {
+            service.irPagina = func;
+        }
+
+        function mudaPagina(func) {
+            service.irPagina(service.getPagina());
+        }
+
+
+        function nullOrUndef(obj) {
+            return obj === undefined || obj == null;
+        }
+
+        function nullOrUndefOrEmpty(obj) {
+            return obj === undefined || obj == null || obj === "";
+        }
+
+        //temporada
+        function setTemporada(value) {
+            service.temporada = value;
+        }
+
+        function getTemporada() {
+            return service.temporada;
         }
     }]);

@@ -17,7 +17,8 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
                     if(!nullOrUndef(response)){
                         gk2vService.setUser(response);
                         $rootScope.logado = true;
-                    }
+                    }else
+                    alert("Usuário não cadastrado");
                 }).error(function (error) {
                     alert("Falha no login");
                 })
@@ -26,7 +27,7 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
 
         $ctrl.novoCadastro = function () {
             $rootScope.logado = true;
-            irPara('perfil');
+            gk2vService.setPagina('perfil');
         };
 
 

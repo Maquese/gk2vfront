@@ -2,7 +2,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
     .component("homeApp", { //// nomo do componente no html trasformar as maiusculas em traço mais a letra maiscula em minuscula exemplo view-teste
         templateUrl: '../html/home.html', ///caminho do seu html brown
         bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
-        controller: function () { /// chamada ao iniciar seu componente
+        controller: function (gk2vService) { /// chamada ao iniciar seu componente
             var $ctrl = this;
 
             $ctrl.home = true;
@@ -31,7 +31,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
                 /*$http.post(api, $scope.user)
                 .success(function (response) {
-                    $scope.temporadas = response.data
+                    $scope.temporadas = response
                 }).error(function (error) {
                     alert("Falha ao listar temporadas");
                 })*/
@@ -42,8 +42,10 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             $ctrl.escolherTemporada = function (value) {
                 $ctrl.temporadaEscolhida = value;
-                alert($ctrl.temporadaEscolhida.nome);
                 ////chamada para partida
+                gk2vService.setTemporada(value);
+                gk2vService.setPagina('aposta');
+                gk2vService.mudaPagina();
             }
         }
     })
