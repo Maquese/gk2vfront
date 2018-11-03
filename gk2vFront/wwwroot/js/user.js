@@ -4,7 +4,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
         bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
         controller: function ($http, gk2vService) { /// chamada ao iniciar seu componente
             var $ctrl = this;
-
+            $("body").css("background", "");
             $ctrl.user = {};
 
             var api = 'http://localhost:7000/api/Usuario/Cadastrar';

@@ -4,7 +4,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
         bindings: { name: '@' }, /// se precisar binda pra passar parametros para seus componentes mas recomendo usar uma serivice
         controller: function (gk2vService) { /// chamada ao iniciar seu componente
             var $ctrl = this;
-
+            $("body").css("background", "");
             $ctrl.home = true;
 
             //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
@@ -44,7 +44,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 $ctrl.temporadaEscolhida = value;
                 ////chamada para partida
                 gk2vService.setTemporada(value);
-                gk2vService.setPagina('aposta');
+                gk2vService.setPagina('apostas');
                 gk2vService.mudaPagina();
             }
         }

@@ -5,6 +5,8 @@ angular.module('app')
         return {
             setUser: setUser,
             getUser: getUser,
+            getUserId:getUserId,
+            getUserTipoUsuario:getUserTipoUsuario,
             setPagina: setPagina,
             getPagina: getPagina,
             nullOrUndef: nullOrUndef,
@@ -78,7 +80,7 @@ angular.module('app')
         }
 
         function mudaPagina(func) {
-            service.irPagina(service.getPagina());
+            service.irPagina(service.pagina);
         }
 
 

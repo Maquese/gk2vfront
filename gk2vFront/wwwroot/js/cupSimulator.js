@@ -8,6 +8,8 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             $("body").css("background", "");
 
 
+            gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
+
             function irPara(pagina) {
                 if (pagina == 'apostas') {
                     $ctrl.apostas = true;
@@ -19,7 +21,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     $ctrl.times = false;
                     $ctrl.ranking = false;
                     $ctrl.novaTemporada = false;
-                } else if (pagina == 'temporadas') {
+                } /*else if (pagina == 'temporadas') {
                     $ctrl.apostas = false;
                     $ctrl.temporadas = true;
                     $ctrl.perfil = false;
@@ -29,7 +31,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     $ctrl.times = false;
                     $ctrl.ranking = false;
                     $ctrl.novaTemporada = false;
-                } else if (pagina == 'perfil') {
+                } */else if (pagina == 'perfil') {
                     $ctrl.apostas = false;
                     $ctrl.temporadas = false;
                     $ctrl.perfil = true;
@@ -49,7 +51,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     $ctrl.times = false;
                     $ctrl.ranking = false;
                     $ctrl.novaTemporada = false;
-                } else if (pagina == 'home') {
+                } else if (pagina == 'home' || pagina == 'temporadas') {
                     $ctrl.apostas = false;
                     $ctrl.temporadas = false;
                     $ctrl.perfil = false;
@@ -104,12 +106,18 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     $ctrl.ranking = false;
                     $ctrl.novaTemporada = true;
                 }
+                paginaAtiva(pagina);
             }
 
-            if (!nullOrUndef(gk2vService.getPagina())){
+            function paginaAtiva(pagina) {
+                $("li").removeClass('current_page_item');
+                $("#" + pagina).addClass('current_page_item');
+            }
+
+            if (!nullOrUndef(gk2vService.getPagina())) {
                 irPara(gk2vService.getPagina());
             }
-            else{
+            else {
                 irPara('home');
             }
 
