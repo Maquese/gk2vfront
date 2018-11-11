@@ -6,19 +6,46 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
     controller: function ($rootScope, $http, gk2vService) { /// chamada ao iniciar seu componente
         var $ctrl = this;
 
-        $("body").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
+        //$("body").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
         $ctrl.user = {};
         $rootScope.logado = false;
+
+        $ctrl.homepage = true;
+        $ctrl.loginPage = false;
+        $ctrl.contatoPage = false;
+
+        $ctrl.logarPage = function () {
+            $ctrl.homepage = false;
+            $ctrl.contatoPage = false;
+            $ctrl.loginPage = true;    
+            $("body").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
+        }
+
+        $ctrl.contactPage = function(){
+            $ctrl.homepage = false;
+            $ctrl.contatoPage = true;
+            $ctrl.loginPage = false;    
+            $("body").css("background", " ");
+        }
+
+
+        $ctrl.principalPage = function(){
+            $ctrl.homepage = true;
+            $ctrl.contatoPage = false;
+            $ctrl.loginPage = false;    
+            $("body").css("background", " ");
+        }
+
 
         $ctrl.efetuarLogin = function (user) {
             var api = 'http://127.0.0.1:7000/api/Usuario/Login';
             $http.post(api, user)
                 .success(function (response) {
-                    if(!nullOrUndef(response)){
+                    if (!nullOrUndef(response)) {
                         gk2vService.setUser(response);
                         $rootScope.logado = true;
-                    }else
-                    alert("Usuário não cadastrado");
+                    } else
+                        alert("Usuário não cadastrado");
                 }).error(function (error) {
                     alert("Falha no login");
                 })
@@ -35,11 +62,11 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
         function nullOrUndef(obj) {
             return obj === undefined || obj == null;
         }
-        
+
         function nullOrUndefOrEmpty(obj) {
             return obj === undefined || obj == null || obj === "";
         }
-        
+
         //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
     }
 });

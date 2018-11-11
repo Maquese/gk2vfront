@@ -113,11 +113,9 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             if (!nullOrUndef(gk2vService.getPagina())) {
                 irPara(gk2vService.getPagina());
-                //gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
             }
             else {
                 irPara('home');
-                //gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
             }
 
             if (!nullOrUndef(gk2vService.getUser())) {
