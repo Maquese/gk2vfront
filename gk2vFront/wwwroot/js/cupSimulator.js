@@ -7,9 +7,6 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             $ctrl.irPara = irPara;
             $("body").css("background", "");
 
-
-            gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
-
             function irPara(pagina) {
                 if (pagina == 'apostas') {
                     $ctrl.apostas = true;
@@ -116,9 +113,15 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             if (!nullOrUndef(gk2vService.getPagina())) {
                 irPara(gk2vService.getPagina());
+                //gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
             }
             else {
                 irPara('home');
+                //gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
+            }
+
+            if (!nullOrUndef(gk2vService.getUser())) {
+                gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
             }
 
             gk2vService.setMudaPagina(irPara);

@@ -28,6 +28,7 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
         $ctrl.novoCadastro = function () {
             $rootScope.logado = true;
             gk2vService.setPagina('perfil');
+            //gk2vService.mudaPagina('perfil');
         };
 
 
