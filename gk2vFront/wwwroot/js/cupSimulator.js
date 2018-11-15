@@ -18,17 +18,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     $ctrl.times = false;
                     $ctrl.ranking = false;
                     $ctrl.novaTemporada = false;
-                } /*else if (pagina == 'temporadas') {
-                    $ctrl.apostas = false;
-                    $ctrl.temporadas = true;
-                    $ctrl.perfil = false;
-                    $ctrl.contato = false;
-                    $ctrl.home = false;
-                    $ctrl.quiz = false;
-                    $ctrl.times = false;
-                    $ctrl.ranking = false;
-                    $ctrl.novaTemporada = false;
-                } */else if (pagina == 'perfil') {
+                } else if (pagina == 'perfil') {
                     $ctrl.apostas = false;
                     $ctrl.temporadas = false;
                     $ctrl.perfil = true;
@@ -120,9 +110,12 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             if (!nullOrUndef(gk2vService.getUser())) {
                 gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
+                $ctrl.usuarioLogado = gk2vService.getUserNome();
             }
 
             gk2vService.setMudaPagina(irPara);
+
+
 
             function nullOrUndef(obj) {
                 return obj === undefined || obj == null;

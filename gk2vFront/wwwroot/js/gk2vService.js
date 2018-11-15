@@ -7,6 +7,7 @@ angular.module('app')
             getUser: getUser,
             getUserId:getUserId,
             getUserTipoUsuario:getUserTipoUsuario,
+            getUserNome:getUserNome,
             setPagina: setPagina,
             getPagina: getPagina,
             nullOrUndef: nullOrUndef,
