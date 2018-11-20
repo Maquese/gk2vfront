@@ -6,10 +6,21 @@ app.component("timesApp", { //// nomo do componente no html trasformar as maiusc
     controller: function ($rootScope, $http) { /// chamada ao iniciar seu componente
         var $ctrl = this;
 
-        $("body").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
-
         alert("times");
 
-        //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
+        $ctrl.listaTimes = [];
+        //$("body").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
+        var api = "ListarTImes";
+        function listarTimes() {
+            $http.post(api)
+                .success(function (response) {
+                    $ctrl.listaTimes = response;
+                }).error(function (error) {
+                    alert("Falha no listar times");
+                })
+        }
+
+        listarTimes();
+
     }
 });

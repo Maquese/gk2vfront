@@ -31,7 +31,7 @@ angular.module('app')
         }
 
         function getUserId() {
-            return service.usuarioLogado.id;
+            return service.usuarioLogado._id;
         }
 
 
