@@ -29,7 +29,7 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
             }
 
             var params = {
-                IdUsuario: " " + gk2vService.getUserId(),
+                IdUsuario: gk2vService.getUserId(),
                 IdQuiz:$ctrl.pergunta._id,
                 Acertou:$ctrl.acertou
             }
