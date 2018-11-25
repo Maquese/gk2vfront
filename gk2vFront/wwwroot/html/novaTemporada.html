@@ -14,17 +14,17 @@
                 <br>
 
                 <form>
-                    <INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1_epoca"> Times eleitos de mesma época <br>
-                    <INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op2_epoca"> Times eleitos de diferentes épocas <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO1" ng-change="$ctrl.setMesmaTemporada(true)"> Times eleitos de mesma época <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO1" ng-change="$ctrl.setMesmaTemporada(false)"> Times eleitos de diferentes épocas <br>
                 </form>
 
                 <br>
 
                 <form>
-                    <INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op1_chave"> Amistoso <br>
-                    <INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op2_chave"> Semi Final <br>
-                    <INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op3_chave"> Quartas de Final <br>
-                    <INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op4_chave"> Temporada Completa <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO2" ng-change="$ctrl.setRodada(amistoso)"> Amistoso <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO2" ng-change="$ctrl.setRodada(semi)"> Semi Final <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO2" ng-change="$ctrl.setRodada(quartas)"> Quartas de Final <br>
+                    <INPUT TYPE="RADIO" NAME="OPCAO2" ng-change="$ctrl.setRodada(completa)"> Temporada Completa <br>
                 </form>
 
                 <br>
