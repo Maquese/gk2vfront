@@ -14,7 +14,9 @@ angular.module('app')
             setTemporada: setTemporada,
             getTemporada: getTemporada,
             setMudaPagina:setMudaPagina,
-            mudaPagina:mudaPagina
+            mudaPagina:mudaPagina,
+            getPartidas:getPartidas,
+            setPartidas:setPartidas
         };
         ///construtor
         function setUser(value) {
@@ -100,5 +102,14 @@ angular.module('app')
 
         function getTemporada() {
             return service.temporada;
+        }
+
+        //Partidas
+        function setPartidas(value) {
+            service.partidas = value;
+        }
+
+        function getPartidas() {
+            return service.partidas;
         }
     }]);

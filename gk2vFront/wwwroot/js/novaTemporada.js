@@ -24,7 +24,7 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
         }
 
 
-        $ctrl.temporada = gk2vService.getTemporada();
+        //$ctrl.temporada = gk2vService.getTemporada();
 
         function criarTemporada() {
             var params = {

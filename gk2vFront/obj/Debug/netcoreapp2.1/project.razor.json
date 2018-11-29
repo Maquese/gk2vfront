@@ -1,6 +1,14 @@
 {
-  "ProjectFilePath": "c:\\Users\\indefinido\\Desktop\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+  "ProjectFilePath": "c:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": null
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
 }

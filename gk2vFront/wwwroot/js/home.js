@@ -29,9 +29,10 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }
                 $http.post(api, params)
                 .success(function (response) {
-                    gk2vService.setTemporada(response);
+                    gk2vService.setPartidas(response);
+                    gk2vService.setTemporada(value);
                     gk2vService.setPagina('apostas');
-                    gk2vService.mudaPagina();
+                    gk2vService.mudaPagina(value);
                 }).error(function (error) {
                     alert("Falha ao listar temporadas");
                 })
