@@ -10,8 +10,10 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
         $ctrl.criarTemporada = criarTemporada;
         $ctrl.setMesmaTemporada = setMesmaTemporada;
         $ctrl.setRodada = setRodada;
-        $ctrl.mesmaTemporada = null;
-        $ctrl.rodadaTemporada = "";
+        $ctrl.mesmaTemporada = true;
+        $ctrl.rodadaTemporada = "oitavas";
+        $ctrl.nomeTemporada = "";
+
 
         function setMesmaTemporada(value) {
             $ctrl.mesmaTemporada = value;
@@ -25,13 +27,19 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
         $ctrl.temporada = gk2vService.getTemporada();
 
         function criarTemporada() {
-            var api = "api/CriarTemporada";
-            /*$http.post(api, {Temporada:$ctrl.mesmaTemporada,Rodada: $ctrl.rodadaTemporada })
+            var params = {
+                Id: gk2vService.getUserId(),
+                Fase: $ctrl.rodadaTemporada,
+                TimesMesmaEpoca: $ctrl.mesmaTemporada,
+                Nome: $ctrl.nomeTemporada
+            }
+            var api = "http://127.0.0.1:7000/api/Temporada/Inserir";
+            $http.post(api, params)
             .success(function (response) {
                 alert("Temporada criada com sucesso!");
             }).error(function (error) {
-                ctrl("Falha ao criar temporada");
-            })*/
+                alert("Falha ao criar temporada");
+            })
         }
     }
 });
