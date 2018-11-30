@@ -66,7 +66,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                             gk2vService.setTemporada($ctrl.temporada);
                             listarPartidas();
                         } else {
-
+                            //pegar time campeao e anunciar vencedor
                         }
                     }).error(function (error) {
                         alert("Falha ao listar partidas");

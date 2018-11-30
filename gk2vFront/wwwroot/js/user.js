@@ -55,5 +55,10 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 $ctrl.user = {};
             }
 
+            function nullOrUndef(obj) {
+                return obj === undefined || obj == null;
+            }
+
+
         }
     });
