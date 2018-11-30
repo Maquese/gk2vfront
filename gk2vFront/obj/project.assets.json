@@ -11500,23 +11500,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\kenney\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Giuliano\\.nuget\\packages\\": {},
+>>>>>>> 11ac686adcf31534682ee32b8980ac1f1e672ab9
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
       "projectName": "gk2vFront",
       "projectPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\gk2vFront.csproj",
       "packagesPath": "C:\\Users\\kenney\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vfront\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Giuliano\\Desktop\\gk2v front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "projectName": "gk2vFront",
+      "projectPath": "C:\\Users\\Giuliano\\Desktop\\gk2v front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "packagesPath": "C:\\Users\\Giuliano\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Giuliano\\Desktop\\gk2v front\\gk2vfront\\gk2vFront\\obj\\",
+>>>>>>> 11ac686adcf31534682ee32b8980ac1f1e672ab9
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\kenney\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+        "C:\\Users\\Giuliano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 11ac686adcf31534682ee32b8980ac1f1e672ab9
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
