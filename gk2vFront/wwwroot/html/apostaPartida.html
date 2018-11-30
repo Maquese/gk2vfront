@@ -13,7 +13,7 @@
       <p>
       <br>
 
-      <div style="font-size:24px">
+      <div style="font-size:24px" ng-if="$ctrl.partidas.length > 0">
         <form ng-repeat="partida in $ctrl.partidas track by $index" style="border:1px solid">
           <div>
             <p>{{partida.primeiraSelecao}}</p>
@@ -28,9 +28,14 @@
             </div>
         </form> 
       </div>
+      <div style="font-size:24px" ng-if="$ctrl.partidas.length <= 0">
+        <h4>Temporada encerrada, obrigado por jogar!</h4>
+        <h5>Confira nosso ranking.</h5>
+      </div>
       <br>
       </p>
-      <button style="font-size:24px" type="button" ng-click="$ctrl.efetuarAposta()" >Submit</button>
+      <button ng-if="$ctrl.partidas.length > 0" style="font-size:24px" type="button" ng-click="$ctrl.efetuarAposta()" >Submit</button>
+      <button ng-if="$ctrl.partidas.length <= 0" style="font-size:24px" type="button" ng-click="$ctrl.voltarHome()" >Temporadas</button>
     </section>
   </div>
 

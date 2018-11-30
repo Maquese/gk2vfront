@@ -61,16 +61,22 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }
                 $http.post(api, params)
                     .success(function (response) {
-                        if (response.length > 0) {
-                            gk2vService.setPartidas(response);
-                            gk2vService.setTemporada($ctrl.temporada);
-                            listarPartidas();
-                        } else {
+
+                        gk2vService.setPartidas(response);
+                        gk2vService.setTemporada($ctrl.temporada);
+                        listarPartidas();
+                        if (response.length <= 0) {
                             //pegar time campeao e anunciar vencedor
+                            alert("Temporada encerrada, obrigado por jogar.");
                         }
                     }).error(function (error) {
                         alert("Falha ao listar partidas");
                     })
+            }
+
+            $ctrl.voltarHome = function () {
+                gk2vService.setPagina('home');
+                gk2vService.mudaPagina();
             }
         }
     });
