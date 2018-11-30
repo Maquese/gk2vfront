@@ -108,14 +108,20 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 irPara('home');
             }
 
+
+           
             if (!nullOrUndef(gk2vService.getUser())) {
                 gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
                 $ctrl.usuarioLogado = gk2vService.getUserNome();
+            }else{
+                $ctrl.userNaoCadastrado = true;
             }
 
             gk2vService.setMudaPagina(irPara);
 
-
+            $ctrl.sairUser = function () {
+                location.reload();
+            }
 
             function nullOrUndef(obj) {
                 return obj === undefined || obj == null;
