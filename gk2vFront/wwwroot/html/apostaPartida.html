@@ -17,14 +17,14 @@
         <form ng-repeat="partida in $ctrl.partidas track by $index" style="border:1px solid">
           <div>
             <p>{{partida.primeiraSelecao}}</p>
-             <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor)"  TYPE="RADIO" ng-value="partida.primeiraSelecao"> Vence time A
+             <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor, $index)"  TYPE="RADIO" ng-value="partida.primeiraSelecao"> Vence time A
             </div>
           <div>
             <p>X</p>
           </div>
           <div>
             <p>{{partida.segundaSelecao}}</p>
-            <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor)" TYPE="RADIO" ng-value="partida.segundaSelecao"> Vence time B
+            <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor, $index)" TYPE="RADIO" ng-value="partida.segundaSelecao"> Vence time B
             </div>
         </form> 
       </div>

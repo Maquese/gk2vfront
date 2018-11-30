@@ -9,7 +9,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             // $ctrl.partidas = [];
             // $ctrl.temporada = gk2vService.getTemporada();
             // $ctrl.valoresAposta = [];
-            $ctrl.pontosTemporada = 0;
+            $ctrl.pontosTemporada = [];
 
             function listarPartidas() {
                 $ctrl.partidas = [];
@@ -28,8 +28,8 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             listarPartidas();
 
-            $ctrl.apostaTime = function (value, fase, vencedor) {
-                //$ctrl.valoresAposta[index] = value;
+            $ctrl.apostaTime = function (value, fase, vencedor, index) {
+                
                 var pontuacao = 0
                 if (fase == 0)
                     pontuacao = 10;
@@ -42,10 +42,10 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
 
                 if (value == vencedor) {
-                    $ctrl.pontosTemporada += pontuacao;
+                    $ctrl.pontosTemporada[index] = pontuacao;
                 }
                 else {
-                    $ctrl.pontosTemporada -= pontuacao;
+                    $ctrl.pontosTemporada[index] = -pontuacao ;
                 }
             }
 
@@ -53,7 +53,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 var api = 'http://127.0.0.1:7000/api/Temporada/Apostar';
                 var apostas = [];
                 for (let index = 0; index < $ctrl.partidas.length; index++) {
-                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: $ctrl.pontosTemporada });
+                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: $ctrl.pontosTemporada[index] });
                 }
                 var params = {
                     IdUsuario: gk2vService.getUserId(),
