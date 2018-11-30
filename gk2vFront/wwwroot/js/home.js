@@ -36,9 +36,6 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }).error(function (error) {
                     alert("Falha ao listar temporadas");
                 })
-
-
-               
             }
         }
     })
