@@ -8,7 +8,8 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             $ctrl.home = true;
             $ctrl.temporadas = [];
             
-                        
+            gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
+
             function listarTemporadas() {
                 var api = 'http://127.0.0.1:7000/api/Temporada/ListarTemporadas';
                 $http.post(api, {IdUsuario:gk2vService.getUserId()})

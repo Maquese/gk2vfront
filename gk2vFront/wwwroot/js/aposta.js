@@ -9,6 +9,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             // $ctrl.partidas = [];
             // $ctrl.temporada = gk2vService.getTemporada();
             // $ctrl.valoresAposta = [];
+            $ctrl.pontosTemporada = [];
 
             function listarPartidas() {
                 $ctrl.partidas = [];
@@ -27,15 +28,32 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             listarPartidas();
 
-            $ctrl.apostaTime = function (value, index) {
-                $ctrl.valoresAposta[index] = value;
+            $ctrl.apostaTime = function (value, fase, vencedor, index) {
+                
+                var pontuacao = 0
+                if (fase == 0)
+                    pontuacao = 10;
+                else if (fase == 1)
+                    pontuacao = 20;
+                else if (fase == 2)
+                    pontuacao = 40;
+                else if (fase == 3)
+                    pontuacao = 80;
+
+
+                if (value == vencedor) {
+                    $ctrl.pontosTemporada[index] = pontuacao;
+                }
+                else {
+                    $ctrl.pontosTemporada[index] = -pontuacao ;
+                }
             }
 
             $ctrl.efetuarAposta = function () {
                 var api = 'http://127.0.0.1:7000/api/Temporada/Apostar';
                 var apostas = [];
                 for (let index = 0; index < $ctrl.partidas.length; index++) {
-                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: 0 });
+                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: $ctrl.pontosTemporada[index] });
                 }
                 var params = {
                     IdUsuario: gk2vService.getUserId(),
@@ -61,16 +79,20 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }
                 $http.post(api, params)
                     .success(function (response) {
-                        if (response.length > 0) {
-                            gk2vService.setPartidas(response);
-                            gk2vService.setTemporada($ctrl.temporada);
-                            listarPartidas();
-                        } else {
-
-                        }
+                        gk2vService.setPartidas(response);
+                        gk2vService.setTemporada($ctrl.temporada);
+                        listarPartidas();
+                        // if (response.length <= 0) {
+                        //     alert("Temporada encerrada, obrigado por jogar.");
+                        // }
                     }).error(function (error) {
                         alert("Falha ao listar partidas");
                     })
+            }
+
+            $ctrl.voltarHome = function () {
+                gk2vService.setPagina('home');
+                gk2vService.mudaPagina();
             }
         }
     });

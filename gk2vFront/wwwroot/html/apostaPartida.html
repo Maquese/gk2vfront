@@ -13,24 +13,29 @@
       <p>
       <br>
 
-      <div style="font-size:24px">
+      <div style="font-size:24px" ng-if="$ctrl.partidas.length > 0">
         <form ng-repeat="partida in $ctrl.partidas track by $index" style="border:1px solid">
           <div>
             <p>{{partida.primeiraSelecao}}</p>
-             <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, $index)"  TYPE="RADIO" ng-value="partida.primeiraSelecao"> Vence time A
+             <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor, $index)"  TYPE="RADIO" ng-value="partida.primeiraSelecao"> Vence time A
             </div>
           <div>
             <p>X</p>
           </div>
           <div>
             <p>{{partida.segundaSelecao}}</p>
-            <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, $index)" TYPE="RADIO" ng-value="partida.segundaSelecao"> Vence time B
+            <INPUT ng-model="partida.resultado" ng-change="$ctrl.apostaTime(partida.resultado, partida.fase, partida.vencedor, $index)" TYPE="RADIO" ng-value="partida.segundaSelecao"> Vence time B
             </div>
         </form> 
       </div>
+      <div style="font-size:24px" ng-if="$ctrl.partidas.length <= 0">
+        <h4>Temporada encerrada, obrigado por jogar!</h4>
+        <h5>Confira nosso ranking.</h5>
+      </div>
       <br>
       </p>
-      <button style="font-size:24px" type="button" ng-click="$ctrl.efetuarAposta()" >Submit</button>
+      <button ng-if="$ctrl.partidas.length > 0" style="font-size:24px" type="button" ng-click="$ctrl.efetuarAposta()" >Submit</button>
+      <button ng-if="$ctrl.partidas.length <= 0" style="font-size:24px" type="button" ng-click="$ctrl.voltarHome()" >Temporadas</button>
     </section>
   </div>
 
