@@ -16,8 +16,8 @@
 			<li class="first" ng-repeat="temporada in $ctrl.temporadas">
 				<p class="date"><a href="#">{{temporada.mes}}<b>{{temporada.dia}}</b></a></p>
 				<h3>{{temporada.nome}}</h3>
-				<p><a href="#">{{temporada.descricao}}</a></p>
-				<button ng-click="$ctrl.escolherTemporada(temporada)">Participar</button>
+				<!-- <p><a href="#">{{temporada.descricao}}</a></p> -->
+				<button ng-show="!$ctrl.admin" ng-click="$ctrl.escolherTemporada(temporada)">Participar</button>
 			</li>
 		</ul>
 	</div>
