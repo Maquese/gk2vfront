@@ -1,8 +1,3 @@
-<!--DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
-<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>GK2V Bet</title>
 <meta name="keywords" content="" />
@@ -11,22 +6,24 @@
 <link href="../css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="../css/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-</head>
-<body ng-controller="appController">-->
+
 <div id="page" class="container">
 	<div id="header">
 		<div id="logo">
 			<img src="../images/pic02.jpg" alt="" />
-			<h1><a href="#">Vinicius Maggi</a></h1>
+			<h1><a >{{$ctrl.usuarioLogado}}</a></h1>
 			<span>Design by GK2V Team</span>
 		</div>
 		<div id="menu">
 			<ul>
-				<li><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li class="current_page_item"><a href="#" accesskey="2" title="">Temporadas</a></li>
-				<li><a href="#" accesskey="3" title="">Minhas apostas</a></li>
-				<li><a href="#" accesskey="4" title="">Meu perfil</a></li>
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+				<li id="home" ng-click="$ctrl.irPara('home')"><a accesskey="1" title="">Homepage</a></li>
+				<li id="quiz" ng-click="$ctrl.irPara('quiz')" ng-if="!$ctrl.admin"><a href="#" accesskey="2" title="">Quiz</a></li>
+				<!-- <li id="times" ng-click="$ctrl.irPara('times')" ng-if="!$ctrl.admin"><a href="#" accesskey="1" title="">Times (Análise)</a></li> -->
+				<li id="temporadas" ng-click="$ctrl.irPara('temporadas')" ng-if="!$ctrl.admin"><a accesskey="2" title="">Temporadas</a></li>
+				<!-- <li id="apostas" ng-click="$ctrl.irPara('apostas')" ng-if="!$ctrl.admin"><a  accesskey="3" title="" >Minhas apostas</a></li> -->
+				<li id="perfil" ng-click="$ctrl.irPara('perfil')" ng-if="!$ctrl.admin"><a  accesskey="4" title="" >Meu perfil</a></li>
+				<li id="novaTemporada" ng-click="$ctrl.irPara('novaTemporada')" ng-if="$ctrl.admin"><a href="#" accesskey="2" title="">Gerar Temporada (admin only)</a></li>
+				<li id="contato" ng-click="$ctrl.irPara('contato')" ng-if="!$ctrl.admin"><a  accesskey="5" title="" >Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
@@ -34,7 +31,14 @@
 		<div id="banner">
 			<img src="../images/pic01.jpg" alt="" class="image-full" />
 		</div>
-		<aposta-partida></aposta-partida>
+		<aposta-partida ng-if="$ctrl.apostas"></aposta-partida>
+		<home-app ng-if="$ctrl.home"></home-app>
+		<user-app ng-if="$ctrl.perfil"></user-app>
+		<quiz-app ng-if="$ctrl.quiz"></quiz-app>
+		<times-app ng-if="$ctrl.times"></times-app>
+		<ranking-app ng-if="$ctrl.ranking"></ranking-app>
+		<nova-temporada ng-if="$ctrl.novaTemporada"></nova-temporada>
+		<contato-app ng-if="$ctrl.contato"></contato-app>
 	</div>
 </div>
 
@@ -46,3 +50,4 @@ crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 crossorigin="anonymous"></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "ProjectFilePath": "c:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+=======
+  "ProjectFilePath": "c:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+>>>>>>> ebcd0ad36aa95474c9c44f492fdf2d83b8b50e3b
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
   "Configuration": {

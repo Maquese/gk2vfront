@@ -1,0 +1,55 @@
+<div id="welcome">
+    <div class="title">
+        <h2>FIFA World Cup - Quiz</h2>
+        <span class="byline">Testes seus conhecimentos de Copas do Mundo!</span>
+    </div>
+    <div class="9u skel-cell-important">
+        <section>
+            <header>
+                <h2>{{$ctrl.pergunta.pergunta}}</h2>
+                <span class="byline">Escolha uma opção:</span>
+            </header>
+            <p>
+                <br>
+                <table style="font-size:24px">
+                    <form>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.opcoes[0].opcao)" TYPE="RADIO" ng-value="$ctrl.pergunta.opcoes[0].opcao">
+                            </th>
+                            <th>{{$ctrl.pergunta.opcoes[0].opcao}}</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.opcoes[1].opcao)" TYPE="RADIO" ng-value="$ctrl.pergunta.opcoes[1].opcao">
+                            </th>
+                            <th>{{$ctrl.pergunta.opcoes[1].opcao}}</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.opcoes[2].opcao)" TYPE="RADIO" ng-value="$ctrl.pergunta.opcoes[2].opcao">
+                            </th>
+                            <th>{{$ctrl.pergunta.opcoes[2].opcao}}</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <INPUT ng-model="$ctrl.respostaUser" ng-change="$ctrl.escolherResposta($ctrl.pergunta.opcoes[3].opcao)" TYPE="RADIO" ng-value="$ctrl.pergunta.opcoes[3].opcao">
+                            </th>
+                            <th>{{$ctrl.pergunta.opcoes[3].opcao}}</th>
+                        </tr>
+                    </form>
+                </table>
+                <br>
+            </p>
+            <button style="font-size:24px" ng-click="$ctrl.responder()">Submit</button>
+        </section>
+    </div>
+    <p><br><br>Este site foi desenvolvido exclusivamente para a disciplina de Projeto Integrado F da PUC-Campinas, SP.</p>
+    <ul class="actions">
+        <li><a href="#" class="button">Etiam posuere</a></li>
+    </ul>
+</div>
