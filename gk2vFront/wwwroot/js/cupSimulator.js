@@ -113,6 +113,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             if (!nullOrUndef(gk2vService.getUser())) {
                 gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
                 $ctrl.usuarioLogado = gk2vService.getUserNome();
+                $ctrl.ptsApostador = gk2vService.getUserPontos();
             }else{
                 $ctrl.userNaoCadastrado = true;
             }

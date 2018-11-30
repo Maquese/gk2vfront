@@ -33,12 +33,6 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             function preencherUser() {
                 $ctrl.user = gk2vService.getUser();
-                if (nullOrUndef($ctrl.user))
-                    $ctrl.userExiste = false;
-                else
-                    $ctrl.userExiste = true;
-
-
                 /* var api = 'http://127.0.0.1:7000/api/Usuario/Login';
                  $ctrl.user.email = "admin@admin.com";
                  $ctrl.user.senha = "admin";
