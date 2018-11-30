@@ -6,6 +6,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             var $ctrl = this;
             $ctrl.irPara = irPara;
             $("body").css("background", "");
+            $ctrl.ptsApostador = 0;
 
             function irPara(pagina) {
                 if (pagina == 'apostas') {
