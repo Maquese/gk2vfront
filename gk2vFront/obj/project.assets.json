@@ -5170,7 +5170,7 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.1": {
-      "sha512": "f8PKGcxiezL1RVqmnmrazj24Mj4KCTSXqwdotl7Lc+82h8iLV7ItxEIShTJakG7M9iw0ZuCocM0J/IhYesdQrg==",
+      "sha512": "BOK5fckW9v7xWjpEI6bPGwkjw10OPVASZcAa8HoWJo/0Mmg4Azddj92v8noU+YgvD/6zNZ9o/RiRXXKxk5rYwQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.1",
       "files": [
@@ -11500,23 +11500,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clastech\\.nuget\\packages\\": {},
+    "C:\\Users\\indefinido\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "projectUniqueName": "C:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
       "projectName": "gk2vFront",
-      "projectPath": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
-      "packagesPath": "C:\\Users\\clastech\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vFront\\obj\\",
+      "projectPath": "C:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+      "packagesPath": "C:\\Users\\indefinido\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\clastech\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\indefinido\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -11557,13 +11557,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\clastech\\Desktop\\gk2vfront\\gk2vfront\\gk2vFront\\obj\\gk2vFront.csproj.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
