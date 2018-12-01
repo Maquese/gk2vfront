@@ -6,13 +6,11 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             var $ctrl = this;
             $("body").css("background", "");
 
-            // $ctrl.partidas = [];
-            // $ctrl.temporada = gk2vService.getTemporada();
-            // $ctrl.valoresAposta = [];
             $ctrl.pontosTemporada = [];
-
+            $ctrl.apostasFeitas = 0;
             function listarPartidas() {
                 $ctrl.partidas = [];
+                $ctrl.apostasFeitas = 0
                 $ctrl.temporada = gk2vService.getTemporada();
                 $ctrl.valoresAposta = [];
                 $ctrl.partidas = gk2vService.getPartidas();
@@ -29,7 +27,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             listarPartidas();
 
             $ctrl.apostaTime = function (value, fase, vencedor, index) {
-                
+
                 var pontuacao = 0
                 if (fase == 0)
                     pontuacao = 10;
@@ -43,9 +41,11 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
                 if (value == vencedor) {
                     $ctrl.pontosTemporada[index] = pontuacao;
+                    $ctrl.apostasFeitas++;
                 }
                 else {
-                    $ctrl.pontosTemporada[index] = -pontuacao ;
+                    $ctrl.pontosTemporada[index] = -pontuacao;
+                    $ctrl.apostasFeitas++;
                 }
             }
 
@@ -60,14 +60,17 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     IdTemporada: $ctrl.temporada._id,
                     Apostas: apostas
                 }
-                $http.post(api, params)
-                    .success(function (response) {
-                        alert("Aposta realizada, boa sorte!");
-                        proximaFase();
-                    }).error(function (error) {
-                        alert("Falha ao realizar aposta.");
-                    })
-
+                if ($ctrl.apostasFeitas == $ctrl.partidas.length) {
+                    $http.post(api, params)
+                        .success(function (response) {
+                            alert("Aposta realizada, boa sorte!");
+                            proximaFase();
+                        }).error(function (error) {
+                            alert("Falha ao realizar aposta.");
+                        })
+                } else {
+                    alert("Aposte em todas as partidas para continuar");
+                }
             };
 
             function proximaFase() {

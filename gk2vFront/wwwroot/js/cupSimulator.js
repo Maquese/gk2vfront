@@ -100,6 +100,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             function paginaAtiva(pagina) {
                 $("li").removeClass('current_page_item');
                 $("#" + pagina).addClass('current_page_item');
+                $ctrl.ptsApostador = gk2vService.getUserPontos();
             }
 
             if (!nullOrUndef(gk2vService.getPagina())) {
@@ -132,6 +133,5 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             function nullOrUndefOrEmpty(obj) {
                 return obj === undefined || obj == null || obj === "";
             }
-            //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
         }
     });
