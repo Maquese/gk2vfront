@@ -6,12 +6,11 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             var $ctrl = this;
             $("body").css("background", "");
 
-            // $ctrl.partidas = [];
-            // $ctrl.temporada = gk2vService.getTemporada();
-            // $ctrl.valoresAposta = [];
-
+            $ctrl.pontosTemporada = [];
+            $ctrl.apostasFeitas = 0;
             function listarPartidas() {
                 $ctrl.partidas = [];
+                $ctrl.apostasFeitas = 0
                 $ctrl.temporada = gk2vService.getTemporada();
                 $ctrl.valoresAposta = [];
                 $ctrl.partidas = gk2vService.getPartidas();
@@ -27,29 +26,51 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
 
             listarPartidas();
 
-            $ctrl.apostaTime = function (value, index) {
-                $ctrl.valoresAposta[index] = value;
+            $ctrl.apostaTime = function (value, fase, vencedor, index) {
+
+                var pontuacao = 0
+                if (fase == 0)
+                    pontuacao = 10;
+                else if (fase == 1)
+                    pontuacao = 20;
+                else if (fase == 2)
+                    pontuacao = 40;
+                else if (fase == 3)
+                    pontuacao = 80;
+
+
+                if (value == vencedor) {
+                    $ctrl.pontosTemporada[index] = pontuacao;
+                    $ctrl.apostasFeitas++;
+                }
+                else {
+                    $ctrl.pontosTemporada[index] = -pontuacao;
+                    $ctrl.apostasFeitas++;
+                }
             }
 
             $ctrl.efetuarAposta = function () {
                 var api = 'http://127.0.0.1:7000/api/Temporada/Apostar';
                 var apostas = [];
                 for (let index = 0; index < $ctrl.partidas.length; index++) {
-                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: 0 });
+                    apostas.push({ CodigoJogo: $ctrl.partidas[index]._id, Pontos: $ctrl.pontosTemporada[index] });
                 }
                 var params = {
                     IdUsuario: gk2vService.getUserId(),
                     IdTemporada: $ctrl.temporada._id,
                     Apostas: apostas
                 }
-                $http.post(api, params)
-                    .success(function (response) {
-                        alert("Aposta realizada, boa sorte!");
-                        proximaFase();
-                    }).error(function (error) {
-                        alert("Falha ao realizar aposta.");
-                    })
-
+                if ($ctrl.apostasFeitas == $ctrl.partidas.length) {
+                    $http.post(api, params)
+                        .success(function (response) {
+                            alert("Aposta realizada, boa sorte!");
+                            proximaFase();
+                        }).error(function (error) {
+                            alert("Falha ao realizar aposta.");
+                        })
+                } else {
+                    alert("Aposte em todas as partidas para continuar");
+                }
             };
 
             function proximaFase() {
@@ -61,16 +82,20 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 }
                 $http.post(api, params)
                     .success(function (response) {
-                        if (response.length > 0) {
-                            gk2vService.setPartidas(response);
-                            gk2vService.setTemporada($ctrl.temporada);
-                            listarPartidas();
-                        } else {
-                            //pegar time campeao e anunciar vencedor
-                        }
+                        gk2vService.setPartidas(response);
+                        gk2vService.setTemporada($ctrl.temporada);
+                        listarPartidas();
+                        // if (response.length <= 0) {
+                        //     alert("Temporada encerrada, obrigado por jogar.");
+                        // }
                     }).error(function (error) {
                         alert("Falha ao listar partidas");
                     })
+            }
+
+            $ctrl.voltarHome = function () {
+                gk2vService.setPagina('home');
+                gk2vService.mudaPagina();
             }
         }
     });

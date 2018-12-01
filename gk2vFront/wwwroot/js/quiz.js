@@ -30,16 +30,18 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
 
             var params = {
                 IdUsuario: gk2vService.getUserId(),
-                IdQuiz:$ctrl.pergunta._id,
-                Acertou:$ctrl.acertou
+                IdQuiz: $ctrl.pergunta._id,
+                Acertou: $ctrl.acertou
             }
 
             $http.post(api, params)
                 .success(function (response) {
-                    console.log("salvo");
+                    gk2vService.setPagina('home');
+                    gk2vService.mudaPagina();
                 }).error(function (error) {
                     alert("Falha ao salvar resposta");
                 })
+
         }
 
         function getQuiz() {
@@ -47,7 +49,6 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
             $http.post(api)
                 .success(function (response) {
                     $ctrl.pergunta = response;
-                    console.log($ctrl.pergunta.opcoes[1].opcao);
                 }).error(function (error) {
                     alert("Falha ao buscar quiz");
                 })

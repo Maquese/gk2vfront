@@ -6,6 +6,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             var $ctrl = this;
             $ctrl.irPara = irPara;
             $("body").css("background", "");
+            $ctrl.ptsApostador = 0;
 
             function irPara(pagina) {
                 if (pagina == 'apostas') {
@@ -99,6 +100,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             function paginaAtiva(pagina) {
                 $("li").removeClass('current_page_item');
                 $("#" + pagina).addClass('current_page_item');
+                $ctrl.ptsApostador = gk2vService.getUserPontos();
             }
 
             if (!nullOrUndef(gk2vService.getPagina())) {
@@ -108,14 +110,21 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 irPara('home');
             }
 
+
+           
             if (!nullOrUndef(gk2vService.getUser())) {
                 gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
                 $ctrl.usuarioLogado = gk2vService.getUserNome();
+                $ctrl.ptsApostador = gk2vService.getUserPontos();
+            }else{
+                $ctrl.userNaoCadastrado = true;
             }
 
             gk2vService.setMudaPagina(irPara);
 
-
+            $ctrl.sairUser = function () {
+                location.reload();
+            }
 
             function nullOrUndef(obj) {
                 return obj === undefined || obj == null;
@@ -124,6 +133,5 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             function nullOrUndefOrEmpty(obj) {
                 return obj === undefined || obj == null || obj === "";
             }
-            //// aqui as logicas da tela/regras da tela criando functions e suas properts lembra de usar o $ctrl na view par apontar
         }
     });

@@ -20,13 +20,13 @@
                             <th>&nbsp;</th>
                             <th><br>Pontos</th>
                         </tr>
-                        <tr>
+                        <tr ng-repeat="apostador in $ctrl.apostadores track by $index">
                             <th></th>
-                            <th><br>Giuliano</th>
+                            <th><br>{{apostador.nome}}</th>
                             <th>&nbsp;</th>
-                            <th><br>35 pontos</th>
+                            <th><br>{{apostador.pontuacao}}</th>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <th></th>
                             <th>Kenney</th>
                             <th>&nbsp;</th>
@@ -49,7 +49,7 @@
                             <th>João</th>
                             <th>&nbsp;</th>
                             <th>15 pontos</th>
-                        </tr>
+                        </tr> -->
                     </table>
                 </center>
                 <br>

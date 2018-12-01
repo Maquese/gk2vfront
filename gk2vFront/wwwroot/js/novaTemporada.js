@@ -11,7 +11,7 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
         $ctrl.setMesmaTemporada = setMesmaTemporada;
         $ctrl.setRodada = setRodada;
         $ctrl.mesmaTemporada = true;
-        $ctrl.rodadaTemporada = "oitavas";
+        $ctrl.rodadaTemporada = 0;
         $ctrl.nomeTemporada = "";
 
 
@@ -19,7 +19,7 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
             $ctrl.mesmaTemporada = value;
         }
 
-        function setRodada(value){
+        function setRodada(value) {
             $ctrl.rodadaTemporada = value;
         }
 
@@ -27,19 +27,23 @@ app.component("novaTemporada", { //// nomo do componente no html trasformar as m
         //$ctrl.temporada = gk2vService.getTemporada();
 
         function criarTemporada() {
-            var params = {
-                Id: gk2vService.getUserId(),
-                Fase: $ctrl.rodadaTemporada,
-                TimesMesmaEpoca: $ctrl.mesmaTemporada,
-                Nome: $ctrl.nomeTemporada
+            if ($ctrl.nomeTemporada == "") {
+                alert("De um nome a sua temporada");
+            } else {
+                var params = {
+                    Id: gk2vService.getUserId(),
+                    Fase: $ctrl.rodadaTemporada,
+                    TimesMesmaEpoca: $ctrl.mesmaTemporada,
+                    Nome: $ctrl.nomeTemporada
+                }
+                var api = "http://127.0.0.1:7000/api/Temporada/Inserir";
+                $http.post(api, params)
+                    .success(function (response) {
+                        alert("Temporada criada com sucesso!");
+                    }).error(function (error) {
+                        alert("Falha ao criar temporada");
+                    })
             }
-            var api = "http://127.0.0.1:7000/api/Temporada/Inserir";
-            $http.post(api, params)
-            .success(function (response) {
-                alert("Temporada criada com sucesso!");
-            }).error(function (error) {
-                alert("Falha ao criar temporada");
-            })
         }
     }
 });

@@ -8,6 +8,7 @@ angular.module('app')
             getUserId:getUserId,
             getUserTipoUsuario:getUserTipoUsuario,
             getUserNome:getUserNome,
+            getUserPontos:getUserPontos,
             setPagina: setPagina,
             getPagina: getPagina,
             nullOrUndef: nullOrUndef,
@@ -67,6 +68,10 @@ angular.module('app')
 
         function getUserTipoUsuario() {
             return service.usuarioLogado.tipoUsuario;
+        }
+
+        function getUserPontos(){
+            return service.usuarioLogado.pontuacao;
         }
 
         //pagina

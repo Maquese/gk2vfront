@@ -1,9 +1,13 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "ProjectFilePath": "c:\\Users\\ViniciusMaggiOliveir\\Desktop\\projetos\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
 =======
   "ProjectFilePath": "c:\\Users\\indefinido\\Desktop\\gk2v\\gk2v-front\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
 >>>>>>> ebcd0ad36aa95474c9c44f492fdf2d83b8b50e3b
+=======
+  "ProjectFilePath": "c:\\Users\\kenney\\Documents\\Projetos\\downloadfront\\gk2vfront\\gk2vFront\\gk2vFront.csproj",
+>>>>>>> 390a82aba85a7241a9cd6d71c1edd69edc8c1657
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
   "Configuration": null
