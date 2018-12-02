@@ -1,101 +1,14 @@
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\kenney\Documents\Projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\kenney\Documents\Projetos\downloadfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\clastech\Desktop\gk2vfront\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\Giuliano\Desktop\gk2v front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-<<<<<<< HEAD
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-=======
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\indefinido\Desktop\gk2v-front\gk2vfront\gk2vfront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.dll
-C:\Users\indefinido\Desktop\gk2v\gk2v-front\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
->>>>>>> ebcd0ad36aa95474c9c44f492fdf2d83b8b50e3b
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.deps.json
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.json
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.runtimeconfig.dev.json
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.dll
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\bin\Debug\netcoreapp2.1\gk2vFront.pdb
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.csprojAssemblyReference.cache
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.csproj.CoreCompileInputs.cache
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cache
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorAssemblyInfo.cs
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfoInputs.cache
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.AssemblyInfo.cs
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.RazorTargetAssemblyInfo.cache
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.dll
+C:\Users\ViniciusMaggiOliveir\Desktop\projetos\gk2vfront\gk2vFront\obj\Debug\netcoreapp2.1\gk2vFront.pdb
