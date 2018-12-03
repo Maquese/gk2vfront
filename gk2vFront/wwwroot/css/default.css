@@ -442,7 +442,6 @@
 	#menu li
 	{
 		border-top: 1px solid rgba(255,255,255,0.08);
-		cursor: pointer;
 	}
 	
 	#menu li a, #menu li span

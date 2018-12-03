@@ -15,20 +15,23 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                 else
                     usuario = user;
 
-
-                if (user.nome == '' || user.nomeSistema == '' || user.senha == '' || user.senhaConfirma == '' || user.email == '')
-                    alert("Preencha os campos obrigatorios");
-                else
-                    if (user.senha == user.senhaConfirma)
-                        $http.post(api, usuario)
-                            .success(function (response) {
-                                alert("Usuario salvo com sucesso!");
-                                gk2vService.setUser(response);
-                            }).error(function (error) {
-                                alert("Falha ao salvar o usuário");
-                            })
+                if (!nullOrUndef(user)) {
+                    if (user.nome == '' || user.nomeSistema == '' || user.senha == '' || user.senhaConfirma == '' || user.email == '')
+                        alert("Preencha os campos obrigatorios");
                     else
-                        alert("Senhas diferentes");
+                        if (user.senha == user.senhaConfirma)
+                            $http.post(api, usuario)
+                                .success(function (response) {
+                                    alert("Usuario salvo com sucesso!");
+                                    gk2vService.setUser(response);
+                                }).error(function (error) {
+                                    alert("Falha ao salvar o usuário");
+                                })
+                        else
+                            alert("Senhas diferentes");
+                }else{
+                    alert("Preencha os campos obrigatorios");
+                }
             };
 
             function preencherUser() {

@@ -1,9 +1,9 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
-<meta name="author" content="GeeksLabs">
-<meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-<link rel="shortcut icon" href="../../img/favicon.png">
+<!-- <script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.dropotron.min.js"></script>
+<script src="../js/skel.min.js"></script>
+<script src="../js/skel-layers.min.js"></script>
+<script src="../js/init.js"></script> -->
+<!-- <link rel="shortcut icon" href="../../img/favicon.png"> -->
 
 <title>GK2V Bet</title>
 
@@ -14,18 +14,28 @@
 
 <div id="pagina-home" ng-if="$ctrl.homepage">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.dropotron.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery.dropotron.min.js"></script>
+        <script src="../js/skel.min.js"></script>
+        <script src="../js/skel-layers.min.js"></script>
+        <script src="../js/init.js"></script>
 
-    <link rel="stylesheet" href="../css/skel.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/style-narrow.css" />
-    <link rel="stylesheet" href="../css/style-normal.css" />
-    <link rel="stylesheet" href="../css/style-responsive.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+
+    <!-- font icon -->
+    <link href="../css/elegant-icons-style.css" rel="stylesheet" />
+    <!-- <link href="../css/font-awesome.css" rel="stylesheet" /> -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/fonts.css" rel="stylesheet" />
+    <link href="../css/skel.css" rel="stylesheet" />
+    <!-- <link href="../css/style-mobile.css" rel="stylesheet" /> -->
+    <!-- <link href="../css/style-narrow.css" rel="stylesheet" /> -->
+    <!-- <link href="../css/style-narrower.css" rel="stylesheet" /> -->
+    <!-- <link href="../css/style-wide.css" rel="stylesheet" /> -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- <link href="css/style1.css" rel="stylesheet" /> -->
+    <!-- <link href="css/style2.css" rel="stylesheet" /> -->
+
+
     <!-- Header -->
     <div id="header" class="inicio">
         <div class="container">
@@ -46,7 +56,7 @@
                                 equipe
                                 irá ganhar.</span>
                         </header>
-                        <a class="button alt" id="btnEntrarSistema" ng-click="$ctrl.logarPage()">Entrar</a>
+                        <a class="button alt" ng-click="$ctrl.logarPage()">Entrar</a>
                         <!-- <a href="cadastro.html" class="button alt">Inscreva-se</a> -->
                     </section>
                 </div>
@@ -83,7 +93,7 @@
     <!-- Main -->
     <div id="main" class="wrapper style1">
         <section class="container">
-            <header class="major">
+            <header class="major" style="text-align:center;">
                 <h2>Tecnologias</h2>
                 <span class="byline">Análise profunda de dados na palma de sua mão</span>
             </header>
@@ -134,7 +144,7 @@
 
     <div id="main" class="wrapper style1">
         <section class="container">
-            <header class="major">
+            <header class="major" >
                 <h2>Contato</h2>
                 <span class="byline">Entre em contato com um dos nossos profissionais de suporte.</span>
             </header>
@@ -188,17 +198,21 @@
 
 
 <div class="container" ng-if="$ctrl.loginPage">
-
-    <form class="login-form" action="index.html">
+<link href="css/style1.css" rel="stylesheet" />
+    <form class="login-form" style="background:rgba(213,215,222,0.9)" action="index.html">
         <div class="login-wrap">
-            <p class="login-img">GK2V Bet</p>
+            <p class="login-img" style="color: #34aadc; margin:24px auto 40px;">GK2V Bet</p>
             <div class="input-group">
-                <span class="input-group-addon"><i class="icon_profile"></i></span>
-                <input type="text" class="form-control" placeholder="E-mail" autofocus ng-model="$ctrl.user.email">
+                <span class="input-group-addon">
+                    <!-- <i class="icon_profile"></i> -->
+                </span>
+                <input type="text" class="form-control" style="background:white;" placeholder="E-mail" autofocus ng-model="$ctrl.user.email">
             </div>
             <div class="input-group">
-                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                <input type="password" class="form-control" placeholder="Password" ng-model="$ctrl.user.senha">
+                <span class="input-group-addon">
+                    <!-- <i class="icon_key_alt"></i> -->
+                </span>
+                <input type="password" class="form-control" style="background:white;" placeholder="Password" ng-model="$ctrl.user.senha">
             </div>
             <label class="checkbox">
                 <!-- <input type="checkbox" value="remember-me"> Remember me
