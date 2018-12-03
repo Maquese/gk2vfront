@@ -84,18 +84,31 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     .success(function (response) {
                         gk2vService.setPartidas(response);
                         gk2vService.setTemporada($ctrl.temporada);
+                        atualizarPontuacao();
                         listarPartidas();
-                        // if (response.length <= 0) {
-                        //     alert("Temporada encerrada, obrigado por jogar.");
-                        // }
                     }).error(function (error) {
                         alert("Falha ao listar partidas");
                     })
             }
 
             $ctrl.voltarHome = function () {
+                //atualizarPontuacao();
                 gk2vService.setPagina('home');
                 gk2vService.mudaPagina();
             }
+
+            function atualizarPontuacao(){
+                var api = "http://127.0.0.1:7000/api/Usuario/PontuacaoPorId"
+                var params = {
+                    _id: gk2vService.getUserId()
+                }
+                $http.post(api, params)
+                .success(function (response) {
+                    gk2vService.setUserPontos(response);
+                }).error(function (error) {
+                    alert("Falha ao atualizar pontuação");
+                })
+            }
+
         }
     });

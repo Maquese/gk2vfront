@@ -1,0 +1,9 @@
+#header.inicio{
+    text-align: center;
+}
+
+#btnEntrarSistema{
+    background-color: aquamarine;
+    border-radius: 40px;
+    color: white;
+}

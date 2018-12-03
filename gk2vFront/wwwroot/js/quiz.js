@@ -36,8 +36,8 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
 
             $http.post(api, params)
                 .success(function (response) {
-                    gk2vService.setPagina('home');
-                    gk2vService.mudaPagina();
+                    atualizarPontuacao();
+                    
                 }).error(function (error) {
                     alert("Falha ao salvar resposta");
                 })
@@ -52,6 +52,21 @@ app.component("quizApp", { //// nomo do componente no html trasformar as maiuscu
                 }).error(function (error) {
                     alert("Falha ao buscar quiz");
                 })
+        }
+
+        function atualizarPontuacao(){
+            var api = "http://127.0.0.1:7000/api/Usuario/PontuacaoPorId"
+            var params = {
+                _id: gk2vService.getUserId()
+            }
+            $http.post(api, params)
+            .success(function (response) {
+                gk2vService.setUserPontos(response);
+                gk2vService.setPagina('home');
+                    gk2vService.mudaPagina();
+            }).error(function (error) {
+                alert("Falha ao atualizar pontuação");
+            })
         }
 
         getQuiz();

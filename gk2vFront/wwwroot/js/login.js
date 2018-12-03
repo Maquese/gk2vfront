@@ -14,6 +14,12 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
         $ctrl.loginPage = false;
         $ctrl.contatoPage = false;
 
+
+        setTimeout(() => {
+            
+            $("#header.inicio").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
+        }, 500);
+
         $ctrl.logarPage = function () {
             $ctrl.homepage = false;
             $ctrl.contatoPage = false;
@@ -34,6 +40,7 @@ app.component("loginApp", { //// nomo do componente no html trasformar as maiusc
             $ctrl.contatoPage = false;
             $ctrl.loginPage = false;    
             $("body").css("background", " ");
+            $("#header.inicio").css("background", "url('../images/bg-1.jpg') no-repeat center center fixed");
         }
 
 
