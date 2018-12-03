@@ -100,7 +100,8 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             function paginaAtiva(pagina) {
                 $("li").removeClass('current_page_item');
                 $("#" + pagina).addClass('current_page_item');
-                $ctrl.ptsApostador = gk2vService.getUserPontos();
+                if (!nullOrUndef(gk2vService.getUser()))
+                    $ctrl.ptsApostador = gk2vService.getUserPontos();
             }
 
             if (!nullOrUndef(gk2vService.getPagina())) {
@@ -111,12 +112,12 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
             }
 
 
-           
+
             if (!nullOrUndef(gk2vService.getUser())) {
                 gk2vService.getUserTipoUsuario() == 1 ? $ctrl.admin = true : $ctrl.admin = false;
                 $ctrl.usuarioLogado = gk2vService.getUserNome();
                 $ctrl.ptsApostador = gk2vService.getUserPontos();
-            }else{
+            } else {
                 $ctrl.userNaoCadastrado = true;
             }
 

@@ -60,7 +60,7 @@ angular.module("app") /// seguindo assim pode ser sem modulos novos só pedir se
                     IdTemporada: $ctrl.temporada._id,
                     Apostas: apostas
                 }
-                if ($ctrl.apostasFeitas == $ctrl.partidas.length) {
+                if ($ctrl.apostasFeitas >= $ctrl.partidas.length) {
                     $http.post(api, params)
                         .success(function (response) {
                             alert("Aposta realizada, boa sorte!");
